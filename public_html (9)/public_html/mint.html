@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toucan Universe</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="mint/css/style.css">
+    <link rel="stylesheet" href="mint/fonts/fonts.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="bg-chineseblack font-gilroy antialiased h-full flex flex-col bg">
+    
+    <!-- HEADER START -->
+    <header id="header" class="py-6">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-12">
+                <div class="col-span-12 md:col-span-2 flex md:block items-center">
+                    <!-- Logo Start -->
+                    <a class="text-white font-black text-[40px] uppercase" href="index.html">
+                        <img src="mint/img/logo.png" alt="">
+                    </a>
+                    <!-- Logo End -->
+
+                    <!-- Menu Button Start -->
+                    <button class="text-white md:hidden ml-auto menu-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>                        
+                    </button>
+                    <!-- Menu Button End -->
+                </div>
+                <div class="col-span-10 md:flex justify-end items-center hidden">
+                    <!-- Menu Start -->
+                    <ul class="flex font-bold text-xl menu">
+                        <li><a class="text-white py-3 px-4 before:transition-all before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:-skew-x-6 before:rounded-sm before:bg-goldenyellow before:opacity-0 hover:before:opacity-100 relative before:-z-10" href="index.html">About</a></li>
+
+              
+                        <li><a class="text-white py-3 px-4 before:transition-all before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:-skew-x-6 before:rounded-sm before:bg-goldenyellow before:opacity-0 hover:before:opacity-100 relative before:-z-10" href="mint.html">Mint</a></li>
+                    </ul>
+                    <!-- Menu End -->
+
+                    <!-- Social Start -->
+                    <ul class="flex ml-3">
+                        <li>
+                            <a ref="https://twitter.com/toucanuniverse" target="_blank" class="px-2 block">
+                                <svg width="26" height="22" viewBox="0 0 26 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M25.778 2.89593C24.8296 3.31966 23.8103 3.60605 22.7405 3.73485C23.8324 3.07545 24.671 2.03137 25.0658 0.787338C24.044 1.39781 22.9122 1.84121 21.7075 2.08019C20.7427 1.04475 19.3683 0.397705 17.8472 0.397705C14.9263 0.397705 12.5583 2.78309 12.5583 5.72528C12.5583 6.14284 12.6052 6.54947 12.6953 6.93939C8.2999 6.71722 4.40298 4.59618 1.79453 1.37293C1.3393 2.15979 1.07849 3.07498 1.07849 4.05134C1.07849 5.89967 2.01225 7.53039 3.43132 8.48576C2.56432 8.45812 1.7489 8.21847 1.03578 7.81943C1.0354 7.84166 1.0354 7.86398 1.0354 7.8864C1.0354 10.4677 2.85841 12.6211 5.2778 13.1104C4.83398 13.2322 4.36677 13.2973 3.88438 13.2973C3.54362 13.2973 3.21228 13.2639 2.88943 13.2017C3.56238 15.3184 5.51551 16.8587 7.82977 16.9017C6.01977 18.3306 3.73936 19.1823 1.2616 19.1823C0.834752 19.1823 0.413746 19.1572 0 19.1079C2.34047 20.6196 5.12043 21.5015 8.10708 21.5015C17.8348 21.5015 23.1543 13.3833 23.1543 6.34307C23.1543 6.11206 23.1492 5.88229 23.139 5.65385C24.1723 4.9027 25.069 3.96433 25.778 2.89593Z" fill="white"/>
+                                </svg>                                    
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="px-2 block">
+                                <svg width="30" height="23" viewBox="0 0 30 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M25.1543 2.22763C23.2892 1.38064 21.2891 0.756611 19.1979 0.399204C19.1598 0.392307 19.1217 0.409545 19.1021 0.444022C18.8449 0.896812 18.56 1.48751 18.3604 1.9518C16.1112 1.61854 13.8735 1.61854 11.6704 1.9518C11.4708 1.47719 11.1755 0.896812 10.9171 0.444022C10.8975 0.410695 10.8595 0.393457 10.8214 0.399204C8.73132 0.755469 6.73123 1.3795 4.86492 2.22763C4.84876 2.23453 4.83491 2.24603 4.82572 2.26096C1.03196 7.87036 -0.00730765 13.3419 0.502523 18.7456C0.50483 18.772 0.519825 18.7973 0.540588 18.8134C3.0436 20.6326 5.4682 21.737 7.84777 22.4691C7.88586 22.4806 7.92621 22.4668 7.95044 22.4357C8.51333 21.675 9.01509 20.8728 9.44531 20.0292C9.4707 19.9798 9.44646 19.9212 9.39457 19.9017C8.59869 19.6029 7.84085 19.2386 7.11186 18.8249C7.0542 18.7915 7.04958 18.7099 7.10263 18.6708C7.25603 18.5571 7.40948 18.4387 7.55596 18.3192C7.58246 18.2974 7.61939 18.2927 7.65055 18.3065C12.4397 20.4706 17.6245 20.4706 22.3572 18.3065C22.3883 18.2916 22.4253 18.2962 22.4529 18.318C22.5994 18.4376 22.7528 18.5571 22.9074 18.6708C22.9605 18.7099 22.957 18.7915 22.8993 18.8249C22.1703 19.2466 21.4125 19.6029 20.6155 19.9005C20.5636 19.9201 20.5405 19.9798 20.5659 20.0292C21.0053 20.8716 21.5071 21.6738 22.0596 22.4346C22.0827 22.4668 22.1242 22.4806 22.1623 22.4691C24.5534 21.737 26.978 20.6326 29.481 18.8134C29.5029 18.7973 29.5167 18.7731 29.5191 18.7467C30.1292 12.4995 28.4971 7.07281 25.1924 2.2621C25.1843 2.24603 25.1705 2.23453 25.1543 2.22763ZM10.1605 15.4553C8.71863 15.4553 7.53057 14.1452 7.53057 12.5363C7.53057 10.9273 8.69559 9.61722 10.1605 9.61722C11.6369 9.61722 12.8135 10.9388 12.7904 12.5363C12.7904 14.1452 11.6254 15.4553 10.1605 15.4553ZM19.8842 15.4553C18.4423 15.4553 17.2543 14.1452 17.2543 12.5363C17.2543 10.9273 18.4193 9.61722 19.8842 9.61722C21.3606 9.61722 22.5371 10.9388 22.5141 12.5363C22.5141 14.1452 21.3606 15.4553 19.8842 15.4553Z" fill="white"/>
+                                </svg>                                                                   
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="px-2 block">
+                                <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.1268 2.35112C14.0216 2.35112 14.3644 2.36213 15.5076 2.41429C16.5646 2.46253 17.1387 2.63915 17.5207 2.78757C18.0267 2.98424 18.3879 3.21921 18.7672 3.59855C19.1466 3.9779 19.3816 4.33909 19.5782 4.84508C19.7266 5.22714 19.9033 5.80118 19.9515 6.85814C20.0037 8.00135 20.0147 8.3442 20.0147 11.2389C20.0147 14.1337 20.0037 14.4765 19.9515 15.6197C19.9033 16.6767 19.7266 17.2508 19.5782 17.6328C19.3816 18.1388 19.1466 18.5 18.7672 18.8793C18.3879 19.2587 18.0267 19.4937 17.5207 19.6903C17.1387 19.8388 16.5646 20.0154 15.5076 20.0636C14.3646 20.1158 14.0218 20.1268 11.1268 20.1268C8.23193 20.1268 7.88907 20.1158 6.74608 20.0636C5.68907 20.0154 5.11504 19.8388 4.73302 19.6903C4.22698 19.4937 3.8658 19.2587 3.48645 18.8793C3.1071 18.5 2.87213 18.1388 2.67551 17.6328C2.52704 17.2508 2.35043 16.6767 2.30219 15.6198C2.25003 14.4765 2.23901 14.1337 2.23901 11.2389C2.23901 8.3442 2.25003 8.00135 2.30219 6.85819C2.35043 5.80118 2.52704 5.22714 2.67551 4.84508C2.87213 4.33909 3.1071 3.9779 3.48645 3.59855C3.8658 3.21921 4.22698 2.98424 4.73302 2.78757C5.11504 2.63915 5.68907 2.46253 6.74604 2.41429C7.88925 2.36213 8.2321 2.35112 11.1268 2.35112ZM11.1268 0.397705C8.18252 0.397705 7.81338 0.410185 6.65704 0.462945C5.50308 0.515619 4.71504 0.698859 4.02541 0.966877C3.31251 1.24393 2.70792 1.61463 2.10522 2.21732C1.50253 2.82002 1.13183 3.42461 0.854773 4.13751C0.586756 4.82714 0.403515 5.61518 0.350841 6.76915C0.298081 7.92544 0.285645 8.29463 0.285645 11.2389C0.285645 14.1833 0.298081 14.5525 0.350841 15.7087C0.403515 16.8627 0.586756 17.6508 0.854773 18.3404C1.13183 19.0532 1.50253 19.6579 2.10522 20.2606C2.70792 20.8633 3.31251 21.234 4.02541 21.511C4.71504 21.779 5.50308 21.9623 6.65704 22.015C7.81338 22.0677 8.18252 22.0801 11.1268 22.0801C14.0712 22.0801 14.4404 22.0677 15.5966 22.015C16.7506 21.9623 17.5387 21.779 18.2283 21.511C18.9412 21.234 19.5458 20.8633 20.1485 20.2606C20.7512 19.6579 21.1219 19.0533 21.3989 18.3404C21.6669 17.6508 21.8502 16.8627 21.9028 15.7087C21.9556 14.5525 21.9681 14.1833 21.9681 11.2389C21.9681 8.29463 21.9556 7.92544 21.9028 6.76915C21.8502 5.61518 21.6669 4.82714 21.3989 4.13751C21.1219 3.42461 20.7512 2.82002 20.1485 2.21732C19.5458 1.61463 18.9412 1.24393 18.2283 0.966877C17.5387 0.698859 16.7506 0.515619 15.5966 0.462945C14.4404 0.410185 14.0712 0.397705 11.1268 0.397705ZM11.1268 5.67182C8.05222 5.67182 5.55971 8.16432 5.55971 11.2389C5.55971 14.3136 8.05222 16.8061 11.1268 16.8061C14.2015 16.8061 16.694 14.3136 16.694 11.2389C16.694 8.16432 14.2015 5.67182 11.1268 5.67182ZM11.1268 14.8527C9.13104 14.8527 7.51308 13.2348 7.51308 11.2389C7.51308 9.24315 9.13104 7.62519 11.1268 7.62519C13.1226 7.62519 14.7406 9.24315 14.7406 11.2389C14.7406 13.2348 13.1226 14.8527 11.1268 14.8527ZM18.2149 5.45187C18.2149 6.17037 17.6324 6.75284 16.9139 6.75284C16.1954 6.75284 15.613 6.17037 15.613 5.45187C15.613 4.73337 16.1954 4.15094 16.9139 4.15094C17.6324 4.15094 18.2149 4.73337 18.2149 5.45187Z" fill="white"/>
+                                </svg>                                                                                                  
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- Social End -->
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER END -->
+
+    <!-- MAIN START -->
+    <main id="main" class="text-white flex-1">
+        <div class="container mx-auto text-center relative h-full flex items-center justify-center flex-col">
+            <!-- Countdown Start -->
+            <div class="flex justify-center">
+                <div class="mx-1 sm:mx-7" data-aos="fade-right">
+                    <div id="days" class="relative before:bg-goldenyellow before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:-z-10 before:-skew-x-12 before:rounded-bl-3xl py-2 block text-white text-3xl sm:text-6xl md:text-[96px] font-bold text-center px-4 sm:after:content-[':'] after:absolute after:-right-10 after:content-none">05</div>
+                    <span class="text-xl md:text-3xl font-extrabold mt-2 block">Days</span>
+                </div>
+                <div class="mx-1 sm:mx-7" data-aos="fade-down">
+                    <div id="hours" class="relative before:bg-goldenyellow before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:-z-10 before:-skew-x-12 py-2 block text-white text-3xl sm:text-6xl md:text-[96px] font-bold text-center px-4 sm:after:content-[':'] after:absolute after:-right-10 after:content-none">12</div>
+                    <span class="text-xl md:text-3xl font-extrabold mt-2 block">Hours</span>
+                </div>
+                <div class="mx-1 sm:mx-7" data-aos="fade-left">
+                    <div id="minutes" class="relative before:bg-goldenyellow before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:-z-10 before:-skew-x-12 before:rounded-tr-3xl py-2 block text-white text-3xl sm:text-6xl md:text-[96px] font-bold text-center px-4">00</div>
+                    <span class="text-xl md:text-3xl font-extrabold mt-2 block">Mins</span>
+                </div>
+            </div>
+            <!-- Countdown End -->
+
+            <!-- Title Start -->
+            <div class="text-2xl md:text-5xl font-bold text-center mt-10 mb-7 leading-relaxed" data-aos="fade-up">Release your Toucan on presale! </div>
+            <!-- Title End -->
+
+            <!-- Button Start -->
+            <a href="#" class="modal-btn before:bg-goldenyellow text-white font-bold text-lg md:text-2xl py-3 md:py-6 px-10 md:px-16 relative before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:-z-10 before:-skew-x-12" data-aos="fade-right">Mint Now</a>
+            <!-- Button End -->
+
+            <!-- Discord Start -->
+            <a href="https://discord.gg/8ewjdTcD" class="absolute bottom-10 right-10 lg:right-0 w-40 sm:w-52 lg:w-auto" data-aos="fade-left">
+                <img src="mint/img/discord.svg" alt="">
+            </a>
+            <!-- Discord End -->            
+        </div>
+    </main>
+    <!-- MAIN END -->
+
+    <!-- MENU START -->
+    <div class="fixed top-0 right-0 bottom-0 left-0 bg-black z-50 p-10 menu--area flex flex-col hidden">
+        <!-- Header Start -->
+        <div class="flex justify-end">
+            <!-- Close Button Start -->
+            <button class="text-white menu-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>                
+            </button>
+            <!-- Close Button End -->
+
+        </div>
+        <!-- Header End -->
+
+        <!-- Menu Start -->
+        <!-- Menu Start -->
+        <ul class="text-lg my-auto text-center font-bold mobile-menu-list">
+            <li><a class="text-white p-2 block" href="index.html">Home</a></li>
+
+        </ul>
+        <!-- Menu End -->
+    </div>
+    <!-- MENU END -->
+
+    <!-- MODAL START -->
+    <div class="fixed top-0 left-0 right-0 bottom-0 bg-black text-white z-50 bg-opacity-50 flex justify-center items-center modal--area  px-10 hidden">
+        <!-- Content Start -->
+        <div class="bg-black p-10 md:p-16 w-[700px] modal--content md:rounded-bl-[175px] md:rounded-tr-[175px] md:-skew-x-6">
+            <!-- Header Start -->
+            <div class="flex justify-end">
+                <button class="text-white modal-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>                    
+                </button>
+            </div>
+            <!-- Header End -->
+
+            <!-- Input Start -->
+            <div class="mb-14">
+                <label for="" class="italic font-black text-lg md:text-2xl text-white mb-1 block">Address</label>
+                <div class="flex bg-white bg-opacity-10 -skew-x-6 rounded-md" id="status-modal">
+                    <span class="font-light text-lg md:text-xl p-3" id="">Address</span>
+                    <button class="bg-goldenyellow text-white -skew-x-6 rounded-md py-3 px-6 ml-auto font-bold italic md:text-lg" id="connectButton">Connect</button>
+                </div>
+            </div>
+            <!-- Input End -->
+
+            <!-- List Start -->
+            <ul>
+                <li class="flex font-medium md:font-black italic text-lg md:text-2xl mb-4">
+                    <span class="mr-auto" >Price</span>
+                    <div id="single-price">35 MATIC</div>
+                </li>
+                <li class="flex font-medium md:font-black italic text-lg md:text-2xl mb-4">
+                    <span class="mr-auto">You'll Pay</span>
+                    <div id="totalPrice">35 MATIC</div>
+                </li>
+            </ul>
+            <!-- List End -->
+
+            <!-- Number Start -->
+            <div class="flex justify-center items-center">
+                <!-- Minus Start -->
+                <button class="w-6 h-6 md:w-10 md:h-10 bg-goldenyellow leading-6 md:leading-10 text-center font-black text-lg md:text-2xl rounded-md" id="count-minus">-</button>
+                <!-- Minus End -->
+
+                <!-- Count Start -->
+                <span class="text-goldenyellow font-black text-2xl md:text-5xl mx-4 md:mx-8" id="count">1</span>
+                <!-- Count End -->
+
+                <!-- Plus Start -->
+                <button class="w-6 h-6 md:w-10 md:h-10 bg-goldenyellow leading-6 md:leading-10 text-center font-black text-lg md:text-2xl rounded-md" id="count-plus">+</button>
+                <!-- Plus End -->
+            </div>
+            <!-- Number End -->
+
+            <!-- Buy Start -->
+            <div class="flex justify-center">
+                <button class="bg-goldenyellow -skew-x-12 rounded-lg font-bold text-2xl md:text-4xl py-3 px-20 mt-10" id="mintButton">Buy</button>
+            </div>
+            <!-- Buy End -->
+        </div>
+        <!-- Content End -->
+    </div>
+    <!-- MODAL END -->
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/@metamask/detect-provider/dist/detect-provider.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@3.0.0/dist/web3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="mint/js/main.js"></script>
+    <script src="mint/js/minting.js"></script>
+</body>
+</html>
